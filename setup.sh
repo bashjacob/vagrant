@@ -4,7 +4,7 @@
 apt update && apt upgrade -y
 apt install -y software-properties-common
 add-apt-repository --yes --update ppa:ansible/ansible
-apt install -y ansible
+apt install -y ansible ansible-lint
 
 # Setting up inventory file
 mv /shared/inventory /etc/ansible/hosts
