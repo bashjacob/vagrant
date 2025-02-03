@@ -1,0 +1,18 @@
+all:
+
+  vars:
+    ansible_user: vagrant
+
+  children:
+
+    nodes:
+      hosts:
+        node01:
+          ansible_host: 192.168.56.31
+        node02:
+          ansible_host: 192.168.56.32
+
+    databases:
+      hosts:
+        db:
+          ansible_host: 192.168.56.33
